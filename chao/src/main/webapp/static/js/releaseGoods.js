@@ -1,6 +1,5 @@
 $(function () {
-    var images=[];
-    var maxSize=41504; //4M
+    var maxSize=524288; //500kb
     $("#imageInput").change(function () {
         $("#prompt").text("");
         var imgs=this.files;
@@ -11,9 +10,9 @@ $(function () {
         }
         else{
             for(var i=0;i<imgs.length;i++){
-                //限制图片大小不得超过4M
-                if(imgs[i].size>4194304){
-                    $("#prompt").append("<span class=\"glyphicon glyphicon-remove\" style=\"color: red;\"></span>"+"每张图片大小不得大于4M")
+                //限制图片大小不得超过500k
+                if(imgs[i].size>maxSize){
+                    $("#prompt").append("<span class=\"glyphicon glyphicon-remove\" style=\"color: red;\"></span>"+"每张图片大小不得大于500kb")
                     $("#imageInput").val("");
                     return;
                 }
