@@ -1,0 +1,50 @@
+.nav1{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #262F3E
+}
+.container{
+    margin-top:130px;
+}
+body{
+    background: url("../images/p3.jpg") no-repeat;
+    background-size: cover;
+}
+#d{
+    background-color: white;
+    height:500px;
+    padding: 0;
+}
+.leftDiv{
+    width: 60%;
+    height: 100%;
+    float: left;
+    padding: 0 100px;
+    background-color: #F1E7EF;
+    color: #2A3E71;
+}
+.rightDiv{
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+.rightDiv{
+    background: url("../images/loginImg.jpg") no-repeat;
+    background-size: cover;
+}
+.f{
+    margin-top: 100px;
+    width: 70%;
+    text-align: center;
+}
+#loginButton,#signInButton{
+    background-color: #2A3E71;
+}
+#jump{
+    color: #2A3E71;
+    display: block;
+    margin:10px 0;
+}
+.row{
+    margin-top: -30px;
+}

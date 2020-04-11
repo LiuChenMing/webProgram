@@ -1,0 +1,13 @@
+com\chenming\dao\goodsMapper.class
+com\chenming\pojo\myGoods.class
+com\chenming\pojo\loginInfo.class
+com\chenming\dao\userMapper.class
+com\chenming\pojo\GoodsInfo.class
+com\chenming\pojo\User.class
+com\chenming\controllers\userUpdate.class
+com\chenming\filters\LoginFilter.class
+com\chenming\services\goodsService.class
+com\chenming\services\userService.class
+com\chenming\controllers\myGoods.class
+com\chenming\pojo\detailGoodsInfo.class
+com\chenming\controllers\login.class

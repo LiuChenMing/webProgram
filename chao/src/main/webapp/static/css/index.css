@@ -1,0 +1,42 @@
+
+.nav1{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.font{
+    color:gainsboro;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+}
+.jumbotron{
+    background: url("../images/红.png") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+.buttonGroup1{
+    padding: 0 10%;
+}
+.buttonGroup1 a{
+    border-radius: 0;
+    border: 0;
+}
+.buttonGroup1 *{
+    font-size: 25px;
+}
+footer{
+    background: #3c3c3c;
+    font-size: 15px;
+    color: gainsboro;
+    height: 147px;
+}
+footer a{
+    color: gainsboro;
+}
+footer ul{
+    margin-top:45px;
+}
+footer ul li{
+    margin: 0 10px;
+}

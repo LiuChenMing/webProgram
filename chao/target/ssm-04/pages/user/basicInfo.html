@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--    禁用浏览器本地缓存-->
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>基本信息</title>
+
+
+    <link href="../../static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/css/basicInfo.css" rel="stylesheet">
+    <script src="../../static/js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="../../static/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../static/js/basicInfo.js" type="text/javascript"></script>
+</head>
+<body>
+<div>
+    <div class="header">
+        <div>账号信息</div>
+    </div>
+    <div class="content">
+        <div class="main-inner">
+            <div class="inner-top">
+                <label class="title">基本信息</label>
+                <div class="inner-top-left">
+                    <ul>
+                        <li>
+                            <span class="description">昵称：</span>
+                            <div>
+                                <span id="nicknameSpan1">
+                                    <div id="nickname"></div>
+                                    <a href="javaScript:;">
+                                         <span class="glyphicon glyphicon-pencil" style="font-size: small;margin-left: 5px" id="nicknameAlter"></span>
+                                    </a>
+                                </span>
+                                <span id="nicknameSpan2">
+                                    <input id="nicknameText" type="text" style="display: none">
+                                    <a href="javaScript:;" id="nicknameSave" style="display: none">保存</a>
+                                    <a href="javaScript:;" id="nicknameCancel" style="display: none">取消</a>
+                                </span>
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="description">用户ID：</span>
+                            <div id="userId"></div>
+                        </li>
+                        <li>
+                            <span class="description">用户密码：</span>
+                            <div>
+                                <span id="passwordSpan1">
+                                    <div id="password">******</div>
+                                    <a href="javaScript:;">
+                                         <span class="glyphicon glyphicon-pencil" style="font-size: small;margin-left: 5px" id="passwordAlter"></span>
+                                    </a>
+                                </span>
+                                <span id="passwordSpan2">
+                                    <input id="passwordText" type="text" style="display: none">
+                                    <a href="javaScript:;" id="passwordSave" style="display: none">保存</a>
+                                    <a href="javaScript:;" id="passwordCancel" style="display: none">取消</a>
+                                </span>
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="description">我的邮箱：</span>
+                            <div>
+                                <span id="emailSpan1">
+                                    <div id="email"></div>
+                                    <a href="javaScript:;">
+                                         <span class="glyphicon glyphicon-pencil" style="font-size: small;margin-left: 5px" id="emailAlter"></span>
+                                    </a>
+                                </span>
+                                <span id="emailSpan2">
+                                    <input id="emailText" type="text" style="display: none">
+                                    <a href="javaScript:;" id="emailSave" style="display: none">保存</a>
+                                    <a href="javaScript:;" id="emailCancel" style="display: none">取消</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="description">支付宝账户：</span>
+                            <div>
+                                <span id="alipayIdSpan1">
+                                    <div id="alipayId"></div>
+                                    <a href="javaScript:;">
+                                         <span class="glyphicon glyphicon-pencil" style="font-size: small;margin-left: 5px" id="alipayIdAlter"></span>
+                                    </a>
+                                </span>
+                                <span id="alipayIdSpan2">
+                                    <input id="alipayIdText" type="text" style="display: none">
+                                    <a href="javaScript:;" id="alipayIdSave" style="display: none">保存</a>
+                                    <a href="javaScript:;" id="alipayIdCancel" style="display: none">取消</a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner-bottom">
+                <div class="left">
+                    <label class="title">我的信息</label>
+                    <ul>
+                        <li>
+                            <span class="description">性别：</span>
+                            <div>
+                                <span id="genderSpan1">
+                                    <div id="gender"></div>
+                                    <a href="javaScript:;">
+                                         <span class="glyphicon glyphicon-pencil" style="font-size: small;margin-left: 5px" id="genderAlter"></span>
+                                    </a>
+                                </span>
+                                <span id="genderSpan2">
+                                    <input id="genderText" type="text" style="display: none">
+                                    <a href="javaScript:;" id="genderSave" style="display: none">保存</a>
+                                    <a href="javaScript:;" id="genderCancel" style="display: none">取消</a>
+                                </span>
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="description" >住址:</span>
+                            <div>
+                                <span id="addressSpan1">
+                                    <div id="address"></div>
+                                    <a href="javaScript:;">
+                                         <span class="glyphicon glyphicon-pencil" style="font-size: small;margin-left: 5px" id="addressAlter"></span>
+                                    </a>
+                                </span>
+                                <span id="addressSpan2">
+                                    <input id="addressText" type="text" style="display: none">
+                                    <a href="javaScript:;" id="addressSave" style="display: none">保存</a>
+                                    <a href="javaScript:;" id="addressCancel" style="display: none">取消</a>
+                                </span>
+
+                            </div>
+                        </li>
+                        <li>
+                            <span class="description">年龄:</span>
+                            <div>
+                                <span id="ageSpan1">
+                                    <div id="age"></div>
+                                    <a href="javaScript:;">
+                                         <span class="glyphicon glyphicon-pencil" style="font-size: small;margin-left: 5px" id="ageAlter"></span>
+                                    </a>
+                                </span>
+                                <span id="ageSpan2">
+                                    <input id="ageText" type="text" style="display: none">
+                                    <a href="javaScript:;" id="ageSave" style="display: none">保存</a>
+                                    <a href="javaScript:;" id="ageCancel" style="display: none">取消</a>
+                                </span>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <label class="title">我的评分</label>
+                    <div>平均评分：</div>
+                    <div style="font:18px solid">8.9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var info=JSON.parse(window.localStorage.getItem("loginInfo")).Information;
+        $("#nickname").text(info.nickname);
+        $("#userId").text(info.userId);
+        $("#email").text(info.email);
+        $("#age").text(info.age);
+        $("#gender").text(info.gender);
+        $("#address").text(info.address);
+
+    })
+</script>
+</body>
+</html>

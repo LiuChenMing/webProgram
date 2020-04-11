@@ -1,0 +1,32 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenming.dao.goodsMapper">
+    <insert id="insertGoodsBasicInfo" useGeneratedKeys="true" parameterType="com.chenming.pojo.GoodsInfo">
+        <selectKey keyProperty="goodsId" order="BEFORE" resultType="String">
+            select uuid();
+        </selectKey>
+        insert into goods (user_id,goods_id, price, text_description, title) values (#{userId},#{goodsId},#{price,jdbcType= NUMERIC},#{description},#{title});
+    </insert>
+    <insert id="insertGoodsDetail">
+        insert into goods_details (goods_id, image_address) values (#{goodsId},#{imgAddress});
+    </insert>
+    <select id="selectAddressById" resultType="String">
+        select image_address from goods_details where goods_id=#{goodsId};
+    </select>
+    <resultMap id="map1" type="com.chenming.pojo.detailGoodsInfo">
+        <result property="goodsInfo.goodsId" column="goods_id"></result>
+        <result property="goodsInfo.title" column="title"></result>
+        <result property="goodsInfo.price" column="price"></result>
+        <result property="goodsInfo.description" column="text_description"></result>
+        <collection property="pictureAddress" ofType="String" javaType="ArrayList" column="goods_id" fetchType="eager" select="selectAddressById">
+        </collection>
+    </resultMap>
+    <select id="getDetailGoodsInfoByuserId" resultMap="map1" >
+        select goods_id,price,text_description,title from goods where user_id=#{userId};
+    </select>
+
+    <delete id="deleteGoodsByGoodsId">
+        delete from goods where goods_id=#{goodsId};
+    </delete>
+</mapper>
